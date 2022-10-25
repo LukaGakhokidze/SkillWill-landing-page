@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>SkillWill Landing Page</title>
   </head>
   <body>
     <header class="header--primary">
-      <div class="container">
+      <div class="header__wrapper">
         <img src="./images/Starter.svg" alt="logo" class="logo" />
         <nav class="primary--nav">
           <ul>
@@ -23,99 +30,104 @@
 
     <main>
       <section class="projects">
-        <div class="container">
-          <h1 class="heading--primary">
-            Recent
-            <span>Projects</span>
-          </h1>
+        <h1 class="heading--primary">
+          Recent
+          <span>Projects</span>
+        </h1>
+        <div class="container container--columns">
           <div class="project-card">
             <img
+              class="project-card__img"
               src="./images/3D-illustrations-gabriel-pinheiro.com1.svg"
               alt="light bulb/idea"
             />
             <div class="text-box">
-              <h2>Project 1</h2>
+              <h2 class="heading--secondary">Project 1</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                pariatur voluptatum eligendi esse, libero sunt harum maiores
-                ipsum nisi aut quaerat, architecto eos neque aspernatur
-                consequuntur perspiciatis mollitia dolore distinctio.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse bibendum.Nunc non posuere consectetur, justo erat
+                semper enim, non hendrerit dui odio id enim.
               </p>
             </div>
           </div>
           <div class="project-card">
             <img
+              class="project-card__img"
               src="./images/3D-illustrations-gabriel-pinheiro.com2.svg"
               alt="download symbol"
             />
             <div class="text-box">
-              <h2>Project 2</h2>
+              <h2 class="heading--secondary">Project 2</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                pariatur voluptatum eligendi esse, libero sunt harum maiores
-                ipsum nisi aut quaerat, architecto eos neque aspernatur
-                consequuntur perspiciatis mollitia dolore distinctio.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse bibendum.Nunc non posuere consectetur, justo erat
+                semper enim, non hendrerit dui odio id enim.
               </p>
             </div>
           </div>
           <div class="project-card">
             <img
+              class="project-card__img"
               src="./images/3D-illustrations-gabriel-pinheiro.com3.svg"
               alt="trophy cup"
             />
             <div class="text-box">
-              <h2>Project 3</h2>
+              <h2 class="heading--secondary">Project 3</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                pariatur voluptatum eligendi esse, libero sunt harum maiores
-                ipsum nisi aut quaerat, architecto eos neque aspernatur
-                consequuntur perspiciatis mollitia dolore distinctio.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse bibendum.Nunc non posuere consectetur, justo erat
+                semper enim, non hendrerit dui odio id enim.
               </p>
             </div>
           </div>
         </div>
       </section>
       <section class="latest-posts">
-        <h1 class="heading-primary">
+        <h1 class="heading--primary">
           Latest
           <span>Posts</span>
         </h1>
         <div class="container">
-          <div class="post-card">
-            <img
-              src="./images/Notifications_Outline 1.png"
-              alt="working space"
-            />
-            <h1 class="heading-secondary">Lorem ipsum dolor</h1>
-            <p class="date">April 24, 2022 - 5 min read</p>
-
-            <p>
-              Nunc non posuere consectetur, justo erat semper enim, non
-              hendrerit dui odio id enim.
-            </p>
-          </div>
-          <div class="post-card">
-            <img
-              src="./images/Data processing _Outline 1.png"
-              alt="working space"
-            />
-            <h1 class="heading-secondary">Lorem ipsum dolor</h1>
-            <p class="date">April 24, 2022 - 5 min read</p>
-
-            <p>
-              Nunc non posuere consectetur, justo erat semper enim, non
-              hendrerit dui odio id enim.
-            </p>
-          </div>
-          <div class="post-card">
-            <img src="./images/Startup_Outline-2 1.png" alt="working space" />
-            <h1 class="heading-secondary">Lorem ipsum dolor</h1>
-            <p class="date">April 03, 2022 - 4 min read</p>
-
-            <p>
-              Nunc non posuere consectetur, justo erat semper enim, non
-              hendrerit dui odio id enim.
-            </p>
+          <div class="posts__wrapper">
+            <div class="post-card">
+              <img
+                src="./images/Notifications_Outline 1.png"
+                alt="working space"
+              />
+              <h1 class="post-card__heading">Lorem ipsum dolor</h1>
+              <div class="post-card__text">
+                <p class="date">April 24, 2022 - 5 min read</p>
+                <p>
+                  Nunc non posuere consectetur, justo erat semper enim, non
+                  hendrerit dui odio id enim.
+                </p>
+              </div>
+            </div>
+            <div class="post-card">
+              <img
+                src="./images/Data processing _Outline 1.png"
+                alt="working space"
+              />
+              <h1 class="post-card__heading">Lorem ipsum dolor</h1>
+              <div class="post-card__text">
+                <p class="date">April 24, 2022 - 5 min read</p>
+                <p>
+                  Nunc non posuere consectetur, justo erat semper enim, non
+                  hendrerit dui odio id enim.
+                </p>
+              </div>
+            </div>
+            <div class="post-card">
+              <img src="./images/Startup_Outline-2 1.png" alt="working space" />
+              <h1 class="post-card__heading">Lorem ipsum dolor</h1>
+              <div class="post-card__text">
+                <p class="date">April 03, 2022 - 4 min read</p>
+                <p>
+                  Nunc non posuere consectetur, justo erat semper enim, non
+                  hendrerit dui odio id enim.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

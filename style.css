@@ -92,7 +92,7 @@ a:visited {
   justify-content: flex-start;
   height: 30rem;
   gap: 3rem;
-  background-color: #1e293b;
+  background-color: rgba(30, 41, 59, 0.4);
   padding: 0 3rem;
   border-radius: 2rem;
 }
@@ -138,8 +138,30 @@ a:visited {
   margin-bottom: 2.4rem;
   font-size: 2rem;
   font-weight: 400;
+  color: #9ca3af;
 }
 
 .post-card__text {
   padding: 0 1.35rem;
+}
+
+.footer {
+  border-top: 1px solid #3f4657;
+  height: 11.2rem;
+  margin-top: 8.2rem;
+  padding: 5.6rem 10.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.copyright {
+  font-size: 2rem;
+  font-weight: 500;
 }
